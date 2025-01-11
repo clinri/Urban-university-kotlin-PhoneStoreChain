@@ -27,7 +27,6 @@ fun main() = runBlocking {
             }.join()
             if (!askedForRepairPhone && storeList[indexSelectedStore!!].hasRepairRoom) {
                 val random = (0..1).random()
-                println(random)
                 if (random == 1) {
                     repairPhone()
                     askedForRepairPhone = true
